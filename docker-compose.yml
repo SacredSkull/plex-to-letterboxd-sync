@@ -1,0 +1,12 @@
+﻿services:
+  plex-to-letterboxd:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - LETTERBOXD_EMAIL=youremail
+      - LETTERBOXD_PASSWORD=yourpassword
+      - PLEX_URL=yourplexipaddress
+      - PLEX_TOKEN=yourplextoken
+    volumes:
+      - ./plex_watched_letterboxd.csv:/app/plex_watched_letterboxd.csv
