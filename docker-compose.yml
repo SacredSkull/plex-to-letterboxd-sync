@@ -9,5 +9,3 @@
       PLEX_URL: yourplexipaddress
       PLEX_TOKEN: yourplextoken
       START_NOW: true
-    volumes:
-      - ./plex_watched_letterboxd.csv:/app/plex_watched_letterboxd.csv
